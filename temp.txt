@@ -17,6 +17,6 @@
   "homepage": "http://karlshifflett.wordpress.com",
   "license": "MIT",
   "dependencies": {
-    "pouchdb": "^6.0.5"
+    "mongodb": "^2.0.49"
   }
 }
