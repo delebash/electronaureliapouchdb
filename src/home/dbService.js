@@ -1,4 +1,4 @@
-export default class MongoService {
+export default class DbService {
 
     constructor() {
 

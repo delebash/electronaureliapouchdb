@@ -1,7 +1,7 @@
 import {inject} from 'aurelia-framework';
-import MongoService from './mongoService'
+import DbService from './dbService'
 
-@inject(MongoService)
+@inject(DbService)
 export class Home {
     constructor(db) {
         this.db = db;
