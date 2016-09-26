@@ -16,12 +16,7 @@
   "author": "Karl R. Shifflett",
   "homepage": "http://karlshifflett.wordpress.com",
   "license": "MIT",
-  "devDependencies": {
-    "electron": "^1.4.1",
-    "electron-rebuild": "^1.2.1"
-  },
   "dependencies": {
-    "pouchdb": "^6.0.5",
     "mongodb": "^2.0.49"
   }
 }

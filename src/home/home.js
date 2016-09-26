@@ -1,21 +1,17 @@
 import {inject} from 'aurelia-framework';
+import MongoService from './mongoService'
 
+@inject(MongoService)
 export class Home {
-    constructor() {
-        this.connectionResults = "";
+    constructor(db) {
+      this.db = db;
+      this.title = "Home";
+      this.connectionResults = "";
     }
 
     activate() {
-        // this.leveldbDB.info().then(function (info) {
-        //     connectionResults = '&#10004; We can use PouchDB with LevelDB!';
-        // }).catch(function (err) {
-        //     connectionResults = 'Error for LevelDB';
-        // });
-       // alert('trdt')
-        this.connectionResults = 'Error for LevelDB';
-    //     this.leveldbDB.testConnection()
-    //         .then((promise) => this.connectionResults = promise)
-    //         .catch((err) => this.connectionResults = err);
-    // }
+      this.db.testConnection()
+        .then((promise) => this.connectionResults = promise)
+        .catch((err) => this.connectionResults = err);
     }
 }
