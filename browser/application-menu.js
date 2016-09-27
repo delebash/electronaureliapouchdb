@@ -1,17 +1,16 @@
 'use strict';
 
-var  Menu, ApplicationMenu;
 
-const electron = require('electron');
-const app = electron.app;
-Menu = electron.Menu;
+let ApplicationMenu;
+
+const {Menu} = require('electron')
 
 ApplicationMenu = function () {
 };
 
 ApplicationMenu.prototype.setup = function () {
 
-    var template = [{
+    let template = [{
         label: "Electron Aurelia",
         submenu: [
             {label: "About Electron Aurelia", selector: "orderFrontStandardAboutPanel:"},

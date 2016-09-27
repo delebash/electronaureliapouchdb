@@ -4,7 +4,7 @@ export class App {
         this.router = router;
 
         config.map([
-            {route: ["", "home"], moduleId:"home/home", title:"Home", name:"home" },
+            {route: ["", "home"], moduleId:"home/home", title:"Home", name:"home" }
         ]);
     }
 }

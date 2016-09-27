@@ -4,15 +4,10 @@
      */
 
     'use strict';
-    const electron = require('electron');
-// Module to control application life.
-    const app = electron.app;
-// Module to create native browser window.
-    const BrowserWindow = electron.BrowserWindow;
 
+    const {app} = require('electron')
+    const {BrowserWindow} = require('electron')
     var applicationMenu = require('./browser/application-menu');
-
-    var mainWindow = null;
 
     app.on('ready', function () {
 
@@ -20,7 +15,7 @@
 
         applicationMenu.setup();
 
-        mainWindow = new BrowserWindow({
+        let mainWindow = new BrowserWindow({
             width: 900,
             height: 700,
             "min-width": 400,

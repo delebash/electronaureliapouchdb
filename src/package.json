@@ -21,7 +21,6 @@
     "electron-rebuild": "^1.2.1"
   },
   "dependencies": {
-    "pouchdb": "^6.0.5",
-    "mongodb": "^2.0.49"
+    "pouchdb": "^6.0.5"
   }
 }
