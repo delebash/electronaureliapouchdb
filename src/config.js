@@ -4,12 +4,12 @@ System.config({
   babelOptions: {
     "optional": [
       "runtime",
-        "optimisation.modules.system",
-        "es7.decorators"
+      "optimisation.modules.system",
+      "es7.decorators"
     ]
   },
   paths: {
-      "*": "*",
+    "*": "*",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },

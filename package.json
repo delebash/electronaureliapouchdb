@@ -6,8 +6,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build-mac": "electron-packager . 'DemoElectronAureliaMongoDB' --platform=darwin --arch=x64 --version=0.35.1 --overwrite --out ./build/mac",
-    "build-win": "electron-packager . 'DemoElectronAureliaMongoDB' --platform=win32 --arch=ia32 --version=0.35.1 --overwrite --out ./build/win"
+    "build-mac": "electron-packager . 'ElectronAureliaPouchDB' --platform=darwin --arch=x64 --version=1.4.2 --overwrite --out ./build/mac",
+    "build-win": "electron-packager . 'ElectronAureliaPouchDB' --platform=win32 --arch=x64 --version=1.4.2 --overwrite --out ./build/win"
   },
   "author": "Karl Shifflett",
   "homepage": "http://karlshifflett.wordpress.com",
@@ -16,15 +16,11 @@
     "electron",
     "aurelia",
     "es6",
-    "mongodb"
+    "pouchdb"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Oceanware/demoelectronaureliamongodb.git"
-  },
-  "devDependencies": {
-    "electron-packager": "^5.1.1",
-    "electron-prebuilt": "^0.35.1"
+    "url": "https://github.com/Oceanware/demoelectronaureliapouchdb.git"
   },
   "jspm": {
     "directories": {
@@ -53,5 +49,12 @@
       "babel-runtime": "npm:babel-runtime@^5.8.24",
       "core-js": "npm:core-js@^1.1.4"
     }
+  },
+  "devDependencies": {
+    "electron": "^1.4.2",
+    "electron-packager": "^8.1.0"
+  },
+  "dependencies": {
+    "pouchdb": "^6.0.6"
   }
 }
